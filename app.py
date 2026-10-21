@@ -9,8 +9,8 @@ import plotly.express as px
 # Importa o módulo graph_objects do plotly para construir os gráficos de barras customizados
 import plotly.graph_objects as go
 
-# Carrega a planilha Excel salvando o resultado na variável dados conforme requerido
-dados = pd.read_excel('/content/inadimplencia-clientes.xlsx')
+# Carrega a planilha Excel salvando o resultado na variável dados conforme requerido (caminho relativo para funcionar no GitHub/Streamlit Cloud)
+dados = pd.read_excel('inadimplencia-clientes.xlsx')
 # Cria uma cópia intacta da base original para alimentar filtros e gráficos comparativos
 dados_originais = dados.copy()
 
