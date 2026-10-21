@@ -1,0 +1,10 @@
+# Biblioteca para criar a interface web interativa do painel
+streamlit
+# Biblioteca para manipulação, limpeza e análise dos dados
+pandas
+# Biblioteca contendo algoritmos de aprendizado de máquina para treinar o classificador
+scikit-learn
+# Biblioteca para criação de gráficos altamente dinâmicos e interativos
+plotly
+# Mecanismo necessário para que o pandas possa efetuar a leitura de planilhas Excel (.xlsx)
+openpyxl
