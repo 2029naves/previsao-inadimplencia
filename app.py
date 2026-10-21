@@ -114,6 +114,9 @@ dados_inferencia = {
 # Converte o dicionário de valores informados em um DataFrame de inferência de uma linha
 df_inferencia = pd.DataFrame(dados_inferencia)
 
+# Alinha e ordena as colunas do DataFrame de inferência exatamente com o formato de treinamento X para evitar erros de feature names
+df_inferencia = df_inferencia[X.columns]
+
 # Executa o cálculo da probabilidade real obtendo o valor associado à inadimplência
 probabilidade = modelo.predict_proba(df_inferencia)[0][1]
 # Prediz a classe indicadora do perfil do proponente simulado em tempo real
